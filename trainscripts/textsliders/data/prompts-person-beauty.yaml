@@ -1,0 +1,23 @@
+################################################################
+# BEAUTY SLIDER
+################################################################
+
+- target: "male person"
+  positive: "male person, very attractive, handsome, symmetrical face, clear skin, well proportioned facial features"
+  unconditional: "male person, very unattractive, ugly, asymmetrical face, poor facial proportions, blemished skin"
+  neutral: "male person"
+  action: "enhance"
+  guidance_scale: 4
+  resolution: 1024
+  dynamic_resolution: false
+  batch_size: 1
+
+- target: "female person"
+  positive: "female person, very attractive, beautiful, symmetrical face, clear skin, well proportioned facial features"
+  unconditional: "female person, very unattractive, ugly, asymmetrical face, poor facial proportions, blemished skin"
+  neutral: "female person"
+  action: "enhance"
+  guidance_scale: 4
+  resolution: 1024
+  dynamic_resolution: false
+  batch_size: 1
