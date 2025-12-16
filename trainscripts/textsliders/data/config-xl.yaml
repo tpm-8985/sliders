@@ -11,7 +11,7 @@ network:
 train:
   precision: "bfloat16"
   noise_scheduler: "ddim" # or "ddpm", "lms", "euler_a"
-  iterations: 1000
+  iterations: 300
   lr: 0.0002
   optimizer: "AdamW"
   lr_scheduler: "constant"
@@ -19,7 +19,7 @@ train:
 save:
   name: "temp"
   path: "./models"
-  per_steps: 500
+  per_steps: 50
   precision: "bfloat16"
 logging:
   use_wandb: false
