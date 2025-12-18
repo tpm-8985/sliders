@@ -25,7 +25,8 @@ class NetworkConfig(BaseModel):
     alpha: float = 1.0
 
     training_method: TRAINING_METHODS = "full"
-
+    #@@新增定義的新參數
+    target_block_type: str = "all"
 
 class TrainConfig(BaseModel):
     precision: PRECISION_TYPES = "bfloat16"

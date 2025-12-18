@@ -1,4 +1,4 @@
-# ref:
+# change1ref:
 # - https://github.com/cloneofsimo/lora/blob/master/lora_diffusion/lora.py
 # - https://github.com/kohya-ss/sd-scripts/blob/main/networks/lora.py
 
@@ -120,6 +120,8 @@ class LoRANetwork(nn.Module):
         multiplier: float = 1.0,
         alpha: float = 1.0,
         train_method: TRAINING_METHODS = "full",
+        #@@新增的參數意思是全開的意思讓這個參數能傳出去
+        target_block_type: str = "all",
     ) -> None:
         super().__init__()
         self.lora_scale = 1
@@ -138,6 +140,9 @@ class LoRANetwork(nn.Module):
             self.lora_dim,
             self.multiplier,
             train_method=train_method,
+            #@@呼叫create_modules時傳入參數
+            target_block_type=target_block_type,
+
         )
         print(f"create LoRA for U-Net: {len(self.unet_loras)} modules.")
 
@@ -169,10 +174,23 @@ class LoRANetwork(nn.Module):
         rank: int,
         multiplier: float,
         train_method: TRAINING_METHODS,
+        #@@create_modules 定義與過濾邏輯下面也要加參數
+        target_block_type: str = "all",
     ) -> list:
         loras = []
         names = []
         for name, module in root_module.named_modules():
+            #@@B-LoRA選擇要不要只對特定block type做LoRA
+            if target_block_type == "steucture":
+                #如果是structure則址允許downblocks 和midblock
+                #只要裡面包含upblock就跳九
+                if "upblock" in name:
+                    continue
+            elif target_block_type == "style":
+                #如果是style則址允許upblocks 
+                #只要裡面包含downblock就跳九
+                if "downblock" in name or "midblock" in name:
+                    continue
             if train_method == "noxattn" or train_method == "noxattn-hspace" or train_method == "noxattn-hspace-last":  # Cross Attention と Time Embed 以外学習
                 if "attn2" in name or "time_embed" in name:
                     continue
