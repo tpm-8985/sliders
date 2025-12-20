@@ -1,0 +1,132 @@
+- target: male white person
+  positive: male white person, cyberpunk style, neon lights, cybernetic implants, futuristic clothing, high tech, vibrant colors
+  unconditional: male white person, natural, rustic, vintage, historical, organic, plain
+  neutral: male white person
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+
+- target: male black person
+  positive: male black person, cyberpunk style, neon lights, cybernetic implants, futuristic clothing, high tech, vibrant colors
+  unconditional: male black person, natural, rustic, vintage, historical, organic, plain
+  neutral: male black person
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+
+- target: male indian person
+  positive: male indian person, cyberpunk style, neon lights, cybernetic implants, futuristic clothing, high tech, vibrant colors
+  unconditional: male indian person, natural, rustic, vintage, historical, organic, plain
+  neutral: male indian person
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+
+- target: male asian person
+  positive: male asian person, cyberpunk style, neon lights, cybernetic implants, futuristic clothing, high tech, vibrant colors
+  unconditional: male asian person, natural, rustic, vintage, historical, organic, plain
+  neutral: male asian person
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+
+- target: male hispanic person
+  positive: male hispanic person, cyberpunk style, neon lights, cybernetic implants, futuristic clothing, high tech, vibrant colors
+  unconditional: male hispanic person, natural, rustic, vintage, historical, organic, plain
+  neutral: male hispanic person
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+
+- target: female white person
+  positive: female white person, cyberpunk style, neon lights, cybernetic implants, futuristic clothing, high tech, vibrant colors
+  unconditional: female white person, natural, rustic, vintage, historical, organic, plain
+  neutral: female white person
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+
+- target: female black person
+  positive: female black person, cyberpunk style, neon lights, cybernetic implants, futuristic clothing, high tech, vibrant colors
+  unconditional: female black person, natural, rustic, vintage, historical, organic, plain
+  neutral: female black person
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+
+- target: female indian person
+  positive: female indian person, cyberpunk style, neon lights, cybernetic implants, futuristic clothing, high tech, vibrant colors
+  unconditional: female indian person, natural, rustic, vintage, historical, organic, plain
+  neutral: female indian person
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+
+- target: female asian person
+  positive: female asian person, cyberpunk style, neon lights, cybernetic implants, futuristic clothing, high tech, vibrant colors
+  unconditional: female asian person, natural, rustic, vintage, historical, organic, plain
+  neutral: female asian person
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+
+- target: female hispanic person
+  positive: female hispanic person, cyberpunk style, neon lights, cybernetic implants, futuristic clothing, high tech, vibrant colors
+  unconditional: female hispanic person, natural, rustic, vintage, historical, organic, plain
+  neutral: female hispanic person
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+
+# === 額外加入場景與物件 (讓 Slider 學會真正的「風格」) ===
+- target: a city street
+  positive: a city street, cyberpunk style, neon lights, futuristic buildings, dystopian, rain, wet street
+  unconditional: a city street, rural, rustic, sunny day, plain, historical
+  neutral: a city street
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+
+- target: a car
+  positive: a car, cyberpunk style, futuristic vehicle, flying car, neon glowing tires, high tech
+  unconditional: a car, vintage car, rusty car, old car, standard sedan
+  neutral: a car
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
