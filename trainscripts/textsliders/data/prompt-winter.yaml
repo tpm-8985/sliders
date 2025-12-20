@@ -1,0 +1,40 @@
+- target: a photo of a city street
+  positive: a photo of a city street, winter weather, snow, ice, cold, blizzard
+  unconditional: a photo of a city street, summer weather, sunny, warm, green trees
+  neutral: a photo of a city street
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+- target: a photo of a forest
+  positive: a photo of a forest, winter weather, snow covered trees, ice, cold
+  unconditional: a photo of a forest, summer weather, green leaves, sunny, warm
+  neutral: a photo of a forest
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+- target: a photo of a house
+  positive: a photo of a house, winter weather, snow on roof, frozen, cold
+  unconditional: a photo of a house, summer weather, sunny, warm, green grass
+  neutral: a photo of a house
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+- target: a photo of a mountain
+  positive: a photo of a mountain, winter weather, snowy peak, ice, cold
+  unconditional: a photo of a mountain, summer weather, green, sunny, warm
+  neutral: a photo of a mountain
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
